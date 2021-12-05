@@ -21,7 +21,7 @@
 
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 
         <title>SISTEMA DE TIENDA ELECTRONICO</title>
@@ -36,7 +36,8 @@
 
         <h1 style="text-align-last: center"> LSITADO DE USUARIOS </h1>
 
-        <h6> <a href="AdmiControlador?action=nuevo"> NUEVO </a> </h6>
+         <a href="AdmiControlador?action=nuevo" class="btn btn-primary btn-sm" style="margin-left: 50px; margin-bottom: 10px">
+        <i class="fas fa-folder-plus"></i> NUEVO </a>
       
         <table class="table" border="6" >
         
@@ -57,9 +58,9 @@
                 <th>${item.correo}</th>
 
 
-                <th> <a href="AdmiControlador?action=editar&id=${item.id}"> EDITAR </a> </th>
+                <th> <a href="AdmiControlador?action=editar&id=${item.id}"> <i class="fas fa-pen-alt"></i> </a> </th>
                 <th> <a href="AdmiControlador?action=eliminar&id=${item.id}
-                           " onclick="return(confirm('estas seguro de eliminar?'))">ELIMINAR</a></th> 
+                           " onclick="return(confirm('estas seguro de eliminar?'))"><i class="fas fa-trash-alt"></i></a></th> 
                  
                 </tr>
                

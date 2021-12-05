@@ -3,6 +3,7 @@
     String opcion = request.getParameter("opcion");
     String imagen = request.getParameter("opcionimagen");
 %>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
 <div class="b-example-divider"></div>
         <header class="p-3 bg-dark text-white">
             <div class="container">
@@ -15,19 +16,18 @@
                         
                         <img class="mb-2" src="<%= imagen%>" alt="500PX" width="80" height="70">
                 
-                        <li><a href="index.jsp" class="nav-link <%= (opcion.equals("inicio") ? "active" : "") %> " color="white">Home</a></li>
-                        <li><a href="AlmacenControlador" class="nav-link <%= (opcion.equals("almacen") ? "active" : "")%> " > ALMACEN</a></li>
-                        <li><a href="ProductoControlador?op=listar" class="nav-link <%= (opcion.equals("productos") ? "active" : "") %>">PRODUCTOS</a></li>
-                        <li ><a href="ClienteControlador?op=listar" class="nav-link <%= (opcion.equals("clientes")? "active" : "") %>" >CLIENTES</a></li>
-                        <li><a href="ProveedorControlador?op=listar" class="nav-link <%= (opcion.equals("proveedor") ? "active" : "") %>">PROVEEDORES</a></li>
-                        <li><a href="EntradaControlador?action=listar" class="nav-link <%= (opcion.equals("entrada") ? "active" : "") %>">ADICIONAR STOCK DE PRODUCTOS</a></li>
-                        <li><a href="SalidaControlador" class="nav-link <%= (opcion.equals("salida") ? "active" : "") %>">VENDER STOCK DE PRODUCTOS</a></li>
+                        <li><a href="index.jsp" class="btn btn-warning btn-sm col-xs-2 " style="margin: 3px" class="nav-link <%= (opcion.equals("inicio") ? "active" : "") %> " ><i class="fas fa-home"></i></a></li>
+                        <li><a href="AlmacenControlador" class="btn btn-success btn-sm2" style="margin: 3px"  class="nav-link <%= (opcion.equals("almacen") ? "active" : "")%>"> ALMACEN</a></li>
+                        <li><a href="ProductoControlador?op=listar" class="btn btn-success btn-sm2"  style="margin: 3px" class="nav-link <%= (opcion.equals("productos") ? "active" : "") %>">PRODUCTOS</a></li>
+                        <li ><a href="ClienteControlador?op=listar" class="btn btn-success btn-sm2" style="margin: 3px" class="nav-link <%= (opcion.equals("clientes")? "active" : "") %>" >CLIENTES</a></li>
+                        <li><a href="ProveedorControlador?op=listar" class="btn btn-success btn-sm2"style="margin: 3px" class="nav-link <%= (opcion.equals("proveedor") ? "active" : "") %>">PROVEEDORES</a></li>
+                        <li><a href="EntradaControlador?action=listar" class="btn btn-success btn-sm2"style="margin: 3px" class="nav-link <%= (opcion.equals("entrada") ? "active" : "") %>">ADICIONAR STOCK DE PRODUCTOS</a></li>
+                        <li><a href="SalidaControlador" class="btn btn-success btn-sm2"style="margin: 3px" class="nav-link <%= (opcion.equals("salida") ? "active" : "") %>">VENDER STOCK DE PRODUCTOS</a></li>
                     </ul>
              
-
                     <div class="text-end">
-                        <button id="boton" type="button" class="btn btn-outline-light me-2"><a href="LoginOut">SALIR</a></button>
-                        
+                        <a href="LoginOut" class="btn btn-danger btn-sm" style="margin-left: 50px; margin-bottom: 10px">
+                            <i class="far fa-times-circle"></i> SALIR </a> 
                     </div>
                 </div>
             </div>

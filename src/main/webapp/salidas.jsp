@@ -36,7 +36,9 @@
 
         <h1 style="text-align-last: center"> LSITADO DE PRODUCTOS QUE SE VENDIERON </h1>
 
-        <h6> <a href="SalidaControlador?action=nuevo"> NUEVO </a> </h6>
+      
+        <a href="SalidaControlador?action=nuevo" class="btn btn-primary btn-sm" style="margin-left: 50px; margin-bottom: 10px">
+        <i class="fas fa-folder-plus"></i> NUEVO </a>
       
         <table class="table" border="6" >
         
@@ -62,9 +64,9 @@
                 <th>${item.nom_cliente}</th>
        
 
-                <th> <a href="SalidaControlador?action=editar&id=${item.id}"> EDITAR </a> </th>
+                <th> <a href="SalidaControlador?action=editar&id=${item.id}"> <i class="fas fa-pen-alt"></i> </a> </th>
                 <th> <a href="SalidaControlador?action=eliminar&id=${item.id}
-                           " onclick="return(confirm('estas seguro de eliminar?'))">ELIMINAR</a></th> 
+                           " onclick="return(confirm('estas seguro de eliminar?'))"><i class="fas fa-trash-alt"></i></a></th> 
                  
                 </tr>
                

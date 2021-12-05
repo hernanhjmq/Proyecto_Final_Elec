@@ -34,7 +34,9 @@
         
         
         <h1 style="text-align-last: center">LISTADO DE PROVEEDORES</h1>
-        <h6> <a href="ProveedorControlador?action=nuevo"> NUEVO </a> </h6>
+
+        <a href="ProveedorControlador?action=nuevo" class="btn btn-primary btn-sm" style="margin-left: 50px; margin-bottom: 10px">
+        <i class="fas fa-folder-plus"></i> NUEVO </a>
       
         <table class="table" border="6" >
         
@@ -58,9 +60,9 @@
                 <th>${item.correo}</th>
                 <th>${item.telefono}</th>
 
-                <th> <a href="ProveedorControlador?action=editar&id=${item.id}"> EDITAR </a> </th>
+                <th> <a href="ProveedorControlador?action=editar&id=${item.id}"> <i class="fas fa-pen-alt"></i> </a> </th>
                 <th> <a href="ProveedorControlador?action=eliminar&id=${item.id}
-                           " onclick="return(confirm('estas seguro de eliminar?'))">ELIMINAR</a></th> 
+                           " onclick="return(confirm('estas seguro de eliminar?'))"><i class="fas fa-trash-alt"></i></a></th> 
                  
                 </tr>
                
